@@ -3,11 +3,14 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.keys import Keys
-import time, os
-import notCheating
+import time
+from PIL import Image
+import os
+import pytesseract
 
 #url of the login page
 url = 'https://10fastfingers.com/login'
+anticheaturl = 'https://10fastfingers.com/anticheat'
 
 #specify your gmail email so you can log in and save your score
 email = 'andrew@andrewemery.io'
@@ -35,44 +38,41 @@ def getWords(url):
     userName = driver.find_element_by_xpath('//*[@id="UserEmail"]')
     userName.send_keys(email)
     userName.send_keys(Keys.RETURN)
+    time.sleep(1)
     pw = driver.find_element_by_css_selector('#UserPassword')
     pw.send_keys(password)
     pw.send_keys(Keys.RETURN)
-    time.sleep(10)
-    source = driver.page_source
-    soup = BeautifulSoup(source, features="html.parser")
-    firstWord = soup.find('span', {'class' : 'highlight'})
-    firstWord = firstWord.get_text()
-    spans = soup.find_all('span', {'class' : ''})
-    text = [span.get_text() for span in spans]
-    startingPosition = 0
-    endingPosition = 0
-    while text[startingPosition] != '(Tiếng Việt)':
-        startingPosition += 1
-    while text[endingPosition] != 'Top Ranking':
-        endingPosition += 1
-    startingPosition = startingPosition + 6
-    endingPosition = endingPosition - 3
-    words = []
-    words.append(firstWord)
-    for i in range(startingPosition, endingPosition):
-        words.append(text[i])
+    time.sleep(5)
+    driver.get(anticheaturl)
+    startTest = driver.find_element_by_xpath('/html/body/div[4]/div[1]/div[4]/div/div/div[1]/table/tbody/tr/td[1]/a')
+    startTest.click()
+    start = driver.find_element_by_xpath('//*[@id="start-btn"]')
+    start.click()
+    time.sleep(2)
+    driver.save_screenshot('ss.png')
+    return driver
+
+def cropImage():
+    driver = getWords(url)
+    img = Image.open('ss.png')
+    area = (225, 200, 900, 350)
+    img.crop((area)).save('words.png')
+    os.remove('ss.png')
+    return driver
+
+def decodeWords():
+    driver = cropImage()
+    words = pytesseract.image_to_string(Image.open('words.png'))
     return words, driver
 
 #sends all of the words to the input field followed by a space so that it advances to the next word
-def sendWords(url):
-    words, driver = getWords(url)
-    for word in words:
-        driver.find_element_by_xpath('//*[@id="inputfield"]').clear()
-        sendWord = driver.find_element_by_xpath('//*[@id="inputfield"]')
-        sendWord = sendWord.send_keys(word)
-        sendSpace = driver.find_element_by_xpath('//*[@id="inputfield"]')
-        sendSpace.send_keys(Keys.SPACE)
-        time.sleep(.125)
-    time.sleep(5)
-    driver.close()
+def sendWords():
+    words, driver = decodeWords()
+    sendWord = driver.find_element_by_xpath('//*[@id="word-input"]')
+    sendWord = sendWord.send_keys(words)
+    submit = driver.find_element_by_xpath('//*[@id="submit-anticheat"]')
+    submit.click()
 
 if __name__ == '__main__':
-    sendWords(url)
-    notCheating.sendWords()
+    sendWords()
     # os.remove('words.png')
