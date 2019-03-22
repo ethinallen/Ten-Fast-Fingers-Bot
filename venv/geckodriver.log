@@ -1,0 +1,82 @@
+1553295085277	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/nx/m08m32w938g0glx3j6y7txwh0000gn/T/rust_mozprofile.8HthyBQTLS6x"
+1553295086135	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1553295086136	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1553295086136	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1553295088201	Marionette	INFO	Listening on port 59255
+1553295088302	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: about:blank, line 1: SyntaxError: function statement requires a name
+JavaScript error: about:blank, line 1: SyntaxError: function statement requires a name
+JavaScript error: about:blank, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://vpaid.springserve.net/production/vpaid_627b678b.js, line 5: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: about:blank, line 1: SyntaxError: function statement requires a name
+JavaScript error: about:blank, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+JavaScript error: https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html, line 1: SyntaxError: function statement requires a name
+[Parent 6760, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+JavaScript error: https://cdn.flashtalking.com/pageFold/ftpagefold_v4.7.2.js, line 1: TypeError: b.parent is null
+1553295237865	Marionette	INFO	Stopped listening on port 59255
+JavaScript error: resource://gre/modules/WebProgressChild.jsm, line 61: TypeError: this.mm.content is null
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1553295275185	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/nx/m08m32w938g0glx3j6y7txwh0000gn/T/rust_mozprofile.I7CDRB5TVqh0"
+1553295275970	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1553295275970	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1553295275970	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1553295277900	Marionette	INFO	Listening on port 60399
+1553295277994	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1553295336340	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/nx/m08m32w938g0glx3j6y7txwh0000gn/T/rust_mozprofile.5MyAMI7JWvBs"
+1553295337130	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1553295337130	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1553295337131	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1553295339209	Marionette	INFO	Listening on port 60591
+1553295339264	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Parent 6819, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Parent 6819, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://ad.lkqd.net/vpaid/vpaid.js?fusion=1.0, line 1: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://ad.lkqd.net/vpaid/vpaid.js?fusion=1.0, line 1: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://ad.lkqd.net/vpaid/vpaid.js?fusion=1.0, line 1: NS_ERROR_NOT_INITIALIZED: 
+1553295402892	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/nx/m08m32w938g0glx3j6y7txwh0000gn/T/rust_mozprofile.6rCBBMbQUw5B"
+1553295403734	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1553295403734	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1553295403734	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1553295405780	Marionette	INFO	Listening on port 60838
+1553295405829	Marionette	WARN	TLS certificate errors will be ignored for this session
+1553296018768	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/nx/m08m32w938g0glx3j6y7txwh0000gn/T/rust_mozprofile.nb1teOIBJ6vA"
+1553296019957	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1553296019958	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1553296019958	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1553296022098	Marionette	INFO	Listening on port 61224
+1553296022113	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1553296027192	Marionette	INFO	Stopped listening on port 60399
+1553296030820	Marionette	INFO	Stopped listening on port 60591
+1553296034394	Marionette	INFO	Stopped listening on port 60838
+1553296036949	Marionette	INFO	Stopped listening on port 61224
