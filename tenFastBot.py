@@ -10,10 +10,10 @@ import notCheating
 url = 'https://10fastfingers.com/login'
 
 #specify your gmail email so you can log in and save your score
-email = 'andrew@andrewemery.io'
+email = 'email@email.email'
 
 #specify your gmail password
-password = 'thisismypassword'
+password = 'password'
 
 #path to geckodriver
 pathToDriver = '/home/drew/geckodriver'
