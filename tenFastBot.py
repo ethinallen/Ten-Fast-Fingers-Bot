@@ -10,16 +10,16 @@ import notCheating
 url = 'https://10fastfingers.com/login'
 
 #specify your gmail email so you can log in and save your score
-email = 'email@email.email'
+email = input('Enter your email address: ')
 
 #specify your gmail password
-password = 'password'
+password = input('Enter your password: ')
 
 #path to geckodriver
 pathToDriver = '/home/drew/geckodriver'
 
 #function to make the driver and initialize at the url I want to go to
-def makeDriver(url):
+def makeDriver():
     driver = webdriver.Firefox(executable_path=pathToDriver)
     #set a page timeout
     driver.set_page_load_timeout(10)
@@ -27,11 +27,15 @@ def makeDriver(url):
 
 #gathers all of the words on the page and returns them into a list
 def getWords(url):
-    driver = makeDriver(url)
+    
+    # makes a driver
+    driver = makeDriver()
     try:
         driver.get(url)
     except TimeoutException:
         driver.execute_script("window.stop();")
+    
+    # send our credentials
     userName = driver.find_element_by_xpath('//*[@id="UserEmail"]')
     userName.send_keys(email)
     userName.send_keys(Keys.RETURN)
